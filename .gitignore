@@ -1,0 +1,26 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Local / Colab run outputs at the repo root
+/came_cache/
+/came_a02_out/
+/mlruns/
+/mlartifacts/
+/mlflow.db
+/ray_results/
+/best_model.pt
+/trained_model_b64.txt
+came_a02_outputs.zip
+
+# Colab backup: keep MLflow db, Ray results, leaderboard, plots and submissions;
+# skip large caches (one npz is over GitHub's 100 MB limit) and Colab system files
+output/colab_backup.zip
+output/colab_backup/content/.config/
+output/colab_backup/content/sample_data/
+output/colab_backup/content/came_a02/cache/
+output/colab_backup/content/came_a02/cms_dryrun/
+# SQLite binary: random IDs trigger GitHub secret scanning (false "Twilio key" match)
+output/colab_backup/content/came_a02/mlflow.db
+# Ray trial folder names exceed the Windows 260-character path limit
+output/colab_backup/content/came_a02/ray_results/

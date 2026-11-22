@@ -1,0 +1,21 @@
+{
+  "best_config": {
+    "head_hidden": 0,
+    "dropout": 0.16348329944428888,
+    "lr": 0.00515935737498777,
+    "weight_decay": 0.0020086509099870183,
+    "batch_size": 32,
+    "label_smoothing": 0.05,
+    "color_jitter": 0.008277767700507269,
+    "rot90": true,
+    "width": 24,
+    "n_blocks": 3,
+    "convs_per_block": 2
+  },
+  "params": 157665,
+  "val_acc": 0.9812593460083008,
+  "val_macro_recall": 0.981400304414003,
+  "external_7k_acc": 0.9352367520332336,
+  "external_7k_macro_recall": 0.9094030708267297,
+  "baseline_official_val_macro_recall": 0.899269406392694
+}
